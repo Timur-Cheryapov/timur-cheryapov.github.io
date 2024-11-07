@@ -1,14 +1,19 @@
 # Portfolio Project
+
 ## Description
 This is the source code for my portfolio website. I built this to showcase what I've been working on.
+
 ## Built with
 * HTML
 * CSS
 * [Font Awesome](https://fontawesome.com/)
+
 ## Colloborators
 Timur Cheryapov - MSU student
+
 ## Demo
 You can visit the website by going [here](https://timur-cheryapov.github.io/).
+
 ## Licencse
 MIT License
 
