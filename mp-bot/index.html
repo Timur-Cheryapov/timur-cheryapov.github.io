@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MP Bot - Enterprise AI Chatbot Platform for Russian E-commerce. Real-time streaming, LangGraph integration, and advanced marketplace analytics.">
+    <meta name="keywords" content="AI chatbot, LangGraph, real-time streaming, e-commerce, marketplace automation, TypeScript, Next.js">
+    <meta name="author" content="Your Name">
+    <title>MP Bot - AI E-commerce Assistant | Portfolio Showcase</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://timur-cheryapov.github.io/mp-bot">
+    <meta property="og:title" content="MP Bot - Enterprise AI Chatbot Platform">
+    <meta property="og:description" content="Sophisticated AI assistant for Russian marketplace sellers with real-time streaming and advanced tool execution.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="MP Bot - AI E-commerce Assistant">
+    <meta property="twitter:description" content="Enterprise AI chatbot with LangGraph, real-time streaming, and marketplace integrations.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2>Loading MP Bot Showcase</h2>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-robot"></i>
+                <span>MP Bot</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#demo" class="nav-link">Demo</a>
+                <a href="#overview" class="nav-link">Overview</a>
+                <a href="#technical" class="nav-link">Technical</a>
+                <a href="#stack" class="nav-link">Tech Stack</a>
+                <a href="#results" class="nav-link">Results</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="scroll-progress" id="scroll-progress"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Enterprise AI Platform</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">MP Bot</span><br>
+                    Intelligent E-commerce Assistant
+                </h1>
+                <p class="hero-description">
+                    Sophisticated AI chatbot platform for Russian marketplace sellers featuring real-time streaming, 
+                    LangGraph integration, and advanced tool execution capabilities.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Marketplace Tools</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">80%+</span>
+                        <span class="stat-label">Test Coverage</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">TypeScript</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#demo" class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </a>
+                    <a href="https://github.com/Timur-Cheryapov/mp-bot-frontend" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-github"></i>
+                        Frontend Code
+                    </a>
+                    <a href="https://github.com/Timur-Cheryapov/mp-bot-backend" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-github"></i>
+                        Backend Code
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="chat-preview">
+                    <div class="chat-header">
+                        <div class="chat-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span>MP Bot Interface</span>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message user-message">
+                            <span>Help me list my new product on Wildberries</span>
+                        </div>
+                        <div class="message bot-message typing">
+                            <div class="typing-indicator">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="typing-text">Executing Wildberries list product tool...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Live Demo</h2>
+                <p class="section-subtitle">Experience the real-time streaming and tool execution capabilities</p>
+            </div>
+            
+            <div class="demo-content">
+                <div class="video-container">
+                    <div class="video-placeholder" id="demo-video-placeholder">
+                        <video src="./assets/videos/mp-bot-demo.mp4" controls></video>
+                        <div class="video-overlay">
+                            <i class="fas fa-play-circle"></i>
+                            <h3>Real-time Conversation Demo</h3>
+                            <p>Watch the AI execute marketplace tools with transparent streaming</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Real-time Streaming</h3>
+                        <p>Server-Sent Events implementation with chunk-based content delivery</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tool Execution</h3>
+                        <p>LangGraph-powered AI agent with dynamic marketplace tool integration</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Responsive</h3>
+                        <p>Optimized chat interface across all devices and screen sizes</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="screenshots-carousel">
+                <h3>Interface Screenshots</h3>
+                <div class="carousel-container">
+                    <div class="screenshot-placeholder" data-lightbox="interface">
+                        <img src="./assets/images/chat-interface.png" alt="Chat Interface" />
+                        <div class="screenshot-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Chat Interface</span>
+                        </div>
+                    </div>
+                    <div class="screenshot-placeholder" data-lightbox="mobile">
+                        <img src="./assets/images/mobile-preview.png" alt="Mobile Interface" />
+                        <div class="screenshot-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Mobile View</span>
+                        </div>
+                    </div>
+                    <div class="screenshot-placeholder" data-lightbox="admin">
+                        <img src="./assets/images/user-panel.png" alt="User Panel" />
+                        <div class="screenshot-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>User Panel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section id="overview" class="overview-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Project Overview</h2>
+                <p class="section-subtitle">Solving complex e-commerce challenges with intelligent AI</p>
+            </div>
+            
+            <div class="overview-grid">
+                <div class="overview-card problem">
+                    <div class="card-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>The Challenge</h3>
+                    <p>Russian marketplace sellers on Wildberries needed an intelligent way to analyze their business data, manage products, and optimize performance through natural language interactions.</p>
+                    <ul>
+                        <li>Complex marketplace APIs with rate limiting</li>
+                        <li>Need for real-time AI responses</li>
+                        <li>Multi-step tool execution workflows</li>
+                        <li>Enterprise-grade security requirements</li>
+                    </ul>
+                </div>
+                
+                <div class="overview-card solution">
+                    <div class="card-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>The Solution</h3>
+                    <p>Built a sophisticated AI platform that bridges natural language conversations with complex marketplace operations through real-time streaming and intelligent tool execution.</p>
+                    <ul>
+                        <li>LangGraph-powered AI agent architecture</li>
+                        <li>Custom SSE streaming implementation</li>
+                        <li>Comprehensive Wildberries API integration</li>
+                        <li>Enterprise security with encrypted API keys</li>
+                    </ul>
+                </div>
+                
+                <div class="overview-card impact">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>The Impact</h3>
+                    <p>Delivered a production-ready platform that transforms how sellers interact with their marketplace data, providing instant insights and automated management capabilities.</p>
+                    <ul>
+                        <li>Real-time SSE streaming implementation</li>
+                        <li>3+ integrated marketplace tools</li>
+                        <li>AES-256-GCM security encryption</li>
+                        <li>Transparent AI reasoning process</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="key-features">
+                <h3>Key Platform Features</h3>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-comments"></i>
+                        <h4>Real-time Conversations</h4>
+                        <p>Server-Sent Events streaming with conversation persistence</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-robot"></i>
+                        <h4>AI Agent Framework</h4>
+                        <p>LangGraph state machine with dynamic tool execution</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Enterprise Security</h4>
+                        <p>AES-256-GCM encryption with Row Level Security</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-chart-bar"></i>
+                        <h4>Analytics Integration</h4>
+                        <p>Comprehensive marketplace data analysis and insights</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Responsive Design</h4>
+                        <p>Mobile-first chat interface with adaptive layouts</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-users"></i>
+                        <h4>Multi-tenant Ready</h4>
+                        <p>User isolation and resource management for SaaS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Highlights -->
+    <section id="technical" class="technical-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Achievements</h2>
+                <p class="section-subtitle">Deep dive into the sophisticated architecture and implementation</p>
+            </div>
+            
+            <div class="architecture-diagram">
+                <h3>System Architecture</h3>
+                <div class="diagram-container">
+                    <div class="diagram-placeholder" data-lightbox="architecture">
+                        <img src="./assets/images/architecture-diagram.svg" alt="MP Bot Architecture Diagram" />
+                        <div class="diagram-overlay">
+                            <i class="fas fa-expand"></i>
+                            <span>View Full Architecture</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="diagram-description">
+                    Multi-layered architecture featuring Next.js frontend, Express.js API layer, 
+                    LangGraph AI agent system, and Supabase database with real-time streaming capabilities.
+                </p>
+            </div>
+            
+            <div class="technical-achievements">
+                <div class="achievement-card">
+                    <div class="achievement-header">
+                        <div class="achievement-icon">
+                            <i class="fas fa-stream"></i>
+                        </div>
+                        <h3>Advanced Streaming Implementation</h3>
+                        <span class="difficulty-badge">Senior Level</span>
+                    </div>
+                    <div class="achievement-content">
+                        <p class="challenge"><strong>Challenge:</strong> Implementing real-time AI response streaming with tool execution support and graceful error handling.</p>
+                        <p class="solution"><strong>Solution:</strong> Built custom SSE system with event-based architecture supporting conversation chunks, tool execution events, and mid-stream cancellation.</p>
+                        
+                        <div class="code-block collapsed">
+                            <div class="code-header">
+                                <div class="code-header-left">
+                                    <button class="collapse-btn">
+                                        <i class="fas fa-chevron-down"></i>
+                                        <span>Expand</span>
+                                    </button>
+                                    <span>TypeScript - Streaming Controller</span>
+                                </div>
+                                <div class="code-header-actions">
+                                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                                </div>
+                            </div>
+                            <div class="code-preview">
+                                <code class="language-typescript">// Custom SSE implementation with tool execution events
+export class StreamController {
+    private encoder = new TextEncoder();
+    private controller: ReadableStreamDefaultController;
+    
+    sendEvent(event: string, data: any): void { ... }
+    sendChunk(content: string): void { ... }
+    // ... more methods
+}</code>
+                            </div>
+                            <div class="code-content">
+                                <pre><code class="language-typescript">// Custom SSE implementation with tool execution events
+export class StreamController {
+    private encoder = new TextEncoder();
+    private controller: ReadableStreamDefaultController;
+    
+    constructor(controller: ReadableStreamDefaultController) {
+        this.controller = controller;
+    }
+    
+    sendEvent(event: string, data: any): void {
+        const eventData = JSON.stringify(data);
+        this.controller.enqueue(
+            this.encoder.encode(`event: ${event}\ndata: ${eventData}\n\n`)
+        );
+    }
+    
+    sendChunk(content: string): void {
+        this.sendEvent('chunk', content);
+    }
+    
+    sendToolExecution(toolEvents: Array<{message: string, toolName: string}>): void {
+        this.sendEvent('tool_execution', toolEvents);
+    }
+    
+    sendToolComplete(toolEvent: {message: string, toolName: string, status: 'success' | 'error'}): void {
+        this.sendEvent('tool_complete', toolEvent);
+    }
+    
+    sendError(error: string): void {
+        this.sendEvent('error', { error });
+    }
+    
+    sendEnd(): void {
+        this.sendEvent('end', {});
+        this.controller.close();
+    }
+    
+    close(): void {
+        this.controller.close();
+    }
+}</code></pre>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-tags">
+                            <span class="tech-tag">Server-Sent Events</span>
+                            <span class="tech-tag">AbortController</span>
+                            <span class="tech-tag">Transform Streams</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                        
+                        <p class="impact"><strong>Impact:</strong> Provides ChatGPT-like real-time experience with transparent tool execution and streaming responses.</p>
+                    </div>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-header">
+                        <div class="achievement-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>LangGraph AI Agent Architecture</h3>
+                        <span class="difficulty-badge">Lead Level</span>
+                    </div>
+                    <div class="achievement-content">
+                        <p class="challenge"><strong>Challenge:</strong> Creating intelligent AI agent that can dynamically execute marketplace tools while maintaining conversation context.</p>
+                        <p class="solution"><strong>Solution:</strong> Implemented LangGraph state machine with tool binding, enabling seamless transitions between conversation and API operations.</p>
+                        
+                        <div class="code-block collapsed">
+                            <div class="code-header">
+                                <div class="code-header-left">
+                                    <button class="collapse-btn">
+                                        <i class="fas fa-chevron-down"></i>
+                                        <span>Expand</span>
+                                    </button>
+                                    <span>TypeScript - LangGraph Agent</span>
+                                </div>
+                                <div class="code-header-actions">
+                                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                                </div>
+                            </div>
+                            <div class="code-preview">
+                                <code class="language-typescript">// LangGraph agent with dynamic tool execution
+private createAgent(userId?: string, includeWildberriesTools: boolean = false) {
+    const model = this.createChatModel();
+    const tools = includeWildberriesTools && userId ? this.createTools(userId) : [];
+    
+    // Define agent node, conditional logic, and build graph
+    return workflow.compile();
+}</code>
+                            </div>
+                            <div class="code-content">
+                                <pre><code class="language-typescript">// LangGraph agent with dynamic tool execution
+private createAgent(userId?: string, includeWildberriesTools: boolean = false) {
+    const model = this.createChatModel();
+    
+    // Create tools if needed
+    const tools = includeWildberriesTools && userId ? this.createTools(userId) : [];
+    const toolNode = tools.length > 0 ? new ToolNode(tools) : null;
+
+    // Bind tools to model if available
+    const boundModel = tools.length > 0 ? model.bindTools(tools) : model;
+
+    // Define agent node
+    const callModel = async (state: typeof AgentState.State) => {
+        try {
+            //console.log('state.messages', state.messages);
+            const response = await boundModel.invoke(state.messages);
+            console.log('response', response);
+            
+            // Track token usage if we have userId
+            if (state.userId && response.usage_metadata) {
+                await this.trackTokenUsageFromMetadata(
+                response.usage_metadata,
+                state.modelName || MODEL_CONFIGS.GPT4O_MINI,
+                state.userId
+                );
+            }
+            
+            return { messages: [response] };
+        } catch (error) {
+            logger.error('Error in callModel node:', error);
+            throw error;
+        }
+    };
+
+    // Define conditional logic
+    const shouldContinue = (state: typeof AgentState.State) => {
+        const messages = state.messages;
+        const lastMessage = messages[messages.length - 1] as AIMessage;
+        
+        // If no tools are available or no tool calls, end
+        if (!tools.length || !lastMessage.tool_calls?.length) {
+            return END;
+        }
+        
+        return "tools";
+    };
+
+    // Build the graph
+    const workflow = new StateGraph(AgentState)
+        .addNode("agent", callModel)
+        .addEdge("__start__", "agent");
+
+    // Add tools node and edges if we have tools
+    if (toolNode && tools.length > 0) {
+        workflow
+            .addNode("tools", toolNode)
+            .addConditionalEdges("agent", shouldContinue)
+            .addEdge("tools", "agent");
+    } else {
+        workflow.addEdge("agent", END);
+    }
+
+    return workflow.compile();
+}</code></pre>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-tags">
+                            <span class="tech-tag">LangGraph</span>
+                            <span class="tech-tag">OpenAI Function Calling</span>
+                            <span class="tech-tag">State Management</span>
+                            <span class="tech-tag">Tool Orchestration</span>
+                        </div>
+                        
+                        <p class="impact"><strong>Impact:</strong> Enables complex multi-step workflows like product analysis and pricing optimization in single conversation flow.</p>
+                    </div>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-header">
+                        <div class="achievement-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Enterprise Security Architecture</h3>
+                        <span class="difficulty-badge">Senior Level</span>
+                    </div>
+                    <div class="achievement-content">
+                        <p class="challenge"><strong>Challenge:</strong> Securing sensitive marketplace API keys while implementing fair usage policies for SaaS platform.</p>
+                        <p class="solution"><strong>Solution:</strong> Comprehensive security with AES-256-GCM encryption, Row Level Security, real-time usage tracking, and audit logging.</p>
+                        
+                        <div class="code-block collapsed">
+                            <div class="code-header">
+                                <div class="code-header-left">
+                                    <button class="collapse-btn">
+                                        <i class="fas fa-chevron-down"></i>
+                                        <span>Expand</span>
+                                    </button>
+                                    <span>TypeScript - Security Implementation</span>
+                                </div>
+                                <div class="code-header-actions">
+                                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                                </div>
+                            </div>
+                            <div class="code-preview">
+                                <code class="language-typescript">// AES-256-GCM API key encryption
+export class ApiKeysService {
+    private readonly ALGORITHM = 'aes-256-gcm';
+    
+    private decryptApiKey(encryptedData: string, iv: string, tag: string): string { ... }
+    async getApiKey(userId: string, service: string): Promise<string | null> { ... }
+}</code>
+                            </div>
+                            <div class="code-content">
+                                <pre><code class="language-typescript">// AES-256-GCM API key encryption
+export class ApiKeysService {
+    private supabase: SupabaseClient;
+    private readonly ENCRYPTION_KEY: string;
+    private readonly ALGORITHM = 'aes-256-gcm';
+    
+    constructor() {
+        this.supabase = getSupabaseClient();
+        this.ENCRYPTION_KEY = process.env.API_KEYS_ENCRYPTION_KEY || '';
+        
+        if (!this.ENCRYPTION_KEY) {
+            logger.error('API_KEYS_ENCRYPTION_KEY not set in environment variables');
+            throw new Error('API_KEYS_ENCRYPTION_KEY not set in environment variables');
+        }
+    }
+    
+    /**
+    * Decrypt an API key
+    */
+    private decryptApiKey(encryptedData: string, iv: string, tag: string): string {
+        const key = Buffer.from(this.ENCRYPTION_KEY, 'hex');
+        const decipher = crypto.createDecipheriv(this.ALGORITHM, key, Buffer.from(iv, 'hex'));
+        decipher.setAuthTag(Buffer.from(tag, 'hex'));
+        
+        let decrypted = decipher.update(encryptedData, 'hex', 'utf8');
+        decrypted += decipher.final('utf8');
+        
+        return decrypted;
+    }
+
+    /**
+    * Get an API key for a user and service
+    */
+    async getApiKey(userId: string, service: string): Promise<string | null> {
+        try {
+            const { data, error } = await this.supabase
+                .from('user_api_keys')
+                .select('api_key')
+                .eq('user_id', userId)
+                .eq('service', service.toLowerCase())
+                .single();
+    
+            if (error) {
+                if (error.code === 'PGRST116') {
+                    // No rows returned
+                    return null;
+                }
+                logger.error('Failed to get API key', {
+                    error: error.message,
+                    userId,
+                    service
+                });
+                throw new Error(`Failed to retrieve API key: ${error.message}`);
+            }
+    
+            if (!data || !data.api_key) {
+                return null;
+            }
+    
+            // Decrypt the API key
+            const [iv, tag, encrypted] = data.api_key.split(':');
+            const decryptedApiKey = this.decryptApiKey(encrypted, iv, tag);
+    
+            return decryptedApiKey;
+        } catch (error) {
+            logger.error('Error getting API key', {
+                error: error instanceof Error ? error.message : String(error),
+                userId,
+                service
+            });
+            throw error;
+        }
+    }
+
+    /...
+}</code></pre>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-tags">
+                            <span class="tech-tag">AES-256-GCM</span>
+                            <span class="tech-tag">Supabase RLS</span>
+                            <span class="tech-tag">Token Tracking</span>
+                            <span class="tech-tag">Audit Logging</span>
+                        </div>
+                        
+                        <p class="impact"><strong>Impact:</strong> Achieved enterprise-grade security compliance with comprehensive encryption and audit logging.</p>
+                    </div>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-header">
+                        <div class="achievement-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3>Marketplace API Integration</h3>
+                        <span class="difficulty-badge">Senior Level</span>
+                    </div>
+                    <div class="achievement-content">
+                        <p class="challenge"><strong>Challenge:</strong> Integrating complex, rate-limited Wildberries marketplace APIs with intelligent error handling for AI consumption.</p>
+                        <p class="solution"><strong>Solution:</strong> Built comprehensive service layer with automatic retry logic, Zod validation, and seamless AI-to-API communication.</p>
+                        
+                        <div class="code-block collapsed">
+                            <div class="code-header">
+                                <div class="code-header-left">
+                                    <button class="collapse-btn">
+                                        <i class="fas fa-chevron-down"></i>
+                                        <span>Expand</span>
+                                    </button>
+                                    <span>TypeScript - Marketplace Integration</span>
+                                </div>
+                                <div class="code-header-actions">
+                                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                                </div>
+                            </div>
+                            <div class="code-preview">
+                                <code class="language-typescript">// Robust marketplace API integration
+export function getWildberriesSellerProductCardsTool(userId: string) {
+    return tool(async (input) => {
+        const apiKey = await getWildberriesApiKey(userId);
+        const response = await axios.post('https://content-api-sandbox.wildberries.ru/...');
+        return JSON.stringify({ success: true, data: response.data });
+    }, { name: "get_wildberries_seller_product_cards", ... });
+}</code>
+                            </div>
+                            <div class="code-content">
+                                <pre><code class="language-typescript">// Robust marketplace API integration
+/**
+* Create a Wildberries Seller Products tool for fetching seller's listed products
+* Based on: https://dev.wildberries.ru/openapi/work-with-products#tag/Kartochki-tovarov/paths/~1content~1v2~1get~1cards~1list/post
+*/
+export function getWildberriesSellerProductCardsTool(userId: string) {
+    return tool(
+        async (input) => {
+            try {
+            // Get the user's Wildberries API key
+            const apiKey = await getWildberriesApiKey(userId);
+            if (!apiKey) {
+                return JSON.stringify({
+                    error: "I couldn't find your Wildberries API key.",
+                    success: false,
+                });
+            }
+
+            // Build request body from validated input
+            const requestBody = {
+                settings: {
+                cursor: {
+                    limit: input.limit || 100,
+                    ...(input.updatedAt && { updatedAt: input.updatedAt }),
+                    ...(input.nmID && { nmID: input.nmID })
+                },
+                filter: {
+                    textSearch: input.textSearch || "",
+                    allowedCategoriesOnly: input.allowedCategoriesOnly || false
+                }
+                },
+                ...(input.withPhoto !== undefined && { withPhoto: input.withPhoto })
+            };
+
+            logger.info('Making Wildberries Seller Products API request', {
+                userId,
+                endpoint: '/content/v2/get/cards/list',
+                requestBody
+            });
+
+            // Make POST request to Wildberries Content API
+            const response = await axios.post(
+                'https://content-api-sandbox.wildberries.ru/content/v2/get/cards/list',
+                requestBody,
+                {
+                headers: {
+                    'Authorization': apiKey,
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'User-Agent': 'MP-Bot/1.0'
+                },
+                timeout: 30000
+                }
+            );
+
+            logger.info('Wildberries Seller Products API request successful', {
+                userId,
+                statusCode: response.status,
+                cardsCount: response.data?.cards?.length || 0,
+                cursor: response.data?.cursor
+            });
+
+            // Return structured response as string (required by LangChain tools)
+            return JSON.stringify({
+                success: true,
+                data: response.data,
+                totalCards: response.data?.cards?.length || 0,
+                cursor: response.data?.cursor,
+                requestParams: requestBody,
+                metadata: {
+                    endpoint: "get_wildberries_seller_product_cards",
+                    rateLimit: "100 requests per minute",
+                    apiCategory: "Content"
+                }
+            });
+
+            } catch (error) {
+                return handleWildberriesError(error, userId);
+            }
+        },
+        {
+            name: "get_wildberries_seller_product_cards",
+            description: `Fetch seller's own listed product cards from Wildberries.
+            This tool retrieves the seller's product inventory, including product details, prices, characteristics, and status.
+            Use this when users ask about:
+            - Their own products listed on Wildberries
+            - Inventory management
+            - Product cards and their details
+            - Product status and characteristics
+            - Managing seller's catalog`,
+            schema: getWildberriesSellerProductCardsSchema
+        }
+    );
+}</code></pre>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-tags">
+                            <span class="tech-tag">Axios Interceptors</span>
+                            <span class="tech-tag">Zod Validation</span>
+                            <span class="tech-tag">Rate Limiting</span>
+                        </div>
+                        
+                        <p class="impact"><strong>Impact:</strong> Achieved robust marketplace integration with comprehensive error handling and graceful degradation.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="integration-flow">
+                <h3>Coversation Flow</h3>
+                <div class="flow-diagram">
+                    <div class="diagram-placeholder" data-lightbox="integration">
+                        <img src="./assets/images/conversation-flow.svg" alt="Conversation Flow Diagram" />
+                        <div class="diagram-overlay">
+                            <i class="fas fa-expand"></i>
+                            <span>View Conversation Flow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section id="stack" class="stack-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technology Stack</h2>
+                <p class="section-subtitle">Modern technologies powering enterprise-grade AI platform</p>
+            </div>
+            
+            <div class="stack-grid">
+                <div class="stack-category">
+                    <h3><i class="fas fa-desktop"></i> Frontend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item" data-info="Next.js 15 with React 19 - Modern React framework with app router">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" />
+                            <span>Next.js 15</span>
+                        </div>
+                        <div class="tech-item" data-info="React 19 - Latest React with concurrent features">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
+                            <span>React 19</span>
+                        </div>
+                        <div class="tech-item" data-info="TypeScript - Type-safe development with strict mode">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" />
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="tech-item" data-info="Tailwind CSS - Utility-first CSS framework">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" />
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="tech-item" data-info="Shadcn/ui - Modern component library with Radix UI">
+                            <img src="./assets/icons/shadcn.svg" alt="Shadcn/ui" />
+                            <span>Shadcn/ui</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stack-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item" data-info="Node.js - JavaScript runtime for server-side development">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-item" data-info="Express.js - Fast, minimalist web framework">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express.js" />
+                            <span>Express.js</span>
+                        </div>
+                        <div class="tech-item" data-info="LangChain - Framework for developing LLM applications">
+                            <img src="./assets/icons/langchain.svg" alt="LangChain" />
+                            <span>LangChain</span>
+                        </div>
+                        <div class="tech-item" data-info="LangGraph - Build stateful AI agents with graph-based workflows">
+                            <img src="./assets/icons/langgraph.svg" alt="LangGraph" />
+                            <span>LangGraph</span>
+                        </div>
+                        <div class="tech-item" data-info="OpenAI GPT-4o-mini - Advanced language model for conversations">
+                            <img src="./assets/icons/openai.svg" alt="OpenAI" />
+                            <span>OpenAI</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stack-category">
+                    <h3><i class="fas fa-database"></i> Infrastructure</h3>
+                    <div class="tech-items">
+                        <div class="tech-item" data-info="Supabase - Open source Firebase alternative with PostgreSQL">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" alt="Supabase" />
+                            <span>Supabase</span>
+                        </div>
+                        <div class="tech-item" data-info="PostgreSQL - Advanced open source relational database">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="tech-item" data-info="Server-Sent Events - Real-time streaming communication">
+                            <i class="fa-solid fa-bars-staggered" alt="SSE"></i>
+                            <span>SSE</span>
+                        </div>
+                        <div class="tech-item" data-info="Winston - Logger for Node.js applications">
+                            <i class="fa-solid fa-terminal" alt="Winston"></i>
+                            <span>Winston</span>
+                        </div>
+                        <div class="tech-item" data-info="Jest - Delightful JavaScript testing framework">
+                            <i class="devicon-jest-plain" alt="Jest"></i>
+                            <span>Jest</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stack-highlights">
+                <h3>Technical Highlights</h3>
+                <div class="highlights-grid">
+                    <div class="highlight-item">
+                        <i class="fas fa-bolt"></i>
+                        <h4>Real-time Performance</h4>
+                        <p>Custom SSE implementation with streaming responses and efficient memory management</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Enterprise Security</h4>
+                        <p>AES-256-GCM encryption, Row Level Security, CSRF protection, and comprehensive audit logging</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-cogs"></i>
+                        <h4>Scalable Architecture</h4>
+                        <p>Modular design with horizontal scaling capabilities and multi-tenant resource management</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Production Ready</h4>
+                        <p>80%+ test coverage, comprehensive error handling, performance monitoring, and deployment optimization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Process -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Development Journey</h2>
+                <p class="section-subtitle">Key challenges overcome and lessons learned</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h3>Architecture Planning</h3>
+                        <p>Designed scalable agent architecture with comprehensive documentation for future expansion to specialized AI agents</p>
+                        <div class="timeline-tech">
+                            <span>System Design</span>
+                            <span>LangGraph Planning</span>
+                            <span>Database Schema</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h3>Backend Foundation</h3>
+                        <p>Built robust Express.js API with enterprise security, comprehensive error handling, and efficient database operations</p>
+                        <div class="timeline-tech">
+                            <span>Express.js</span>
+                            <span>Security Implementation</span>
+                            <span>Database Design</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h3>AI Agent Development</h3>
+                        <p>Implemented sophisticated LangGraph agent with tool execution capabilities and real-time streaming responses</p>
+                        <div class="timeline-tech">
+                            <span>LangGraph</span>
+                            <span>Tool Integration</span>
+                            <span>SSE Streaming</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">4</div>
+                    <div class="timeline-content">
+                        <h3>Frontend Excellence</h3>
+                        <p>Created responsive Next.js frontend with real-time chat interface, advanced markdown rendering, and mobile optimization</p>
+                        <div class="timeline-tech">
+                            <span>Next.js 15</span>
+                            <span>Real-time UI</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">5</div>
+                    <div class="timeline-content">
+                        <h3>API Integration</h3>
+                        <p>Integrated complex marketplace APIs with rate limiting and seamless AI tool execution</p>
+                        <div class="timeline-tech">
+                            <span>Wildberries API</span>
+                            <span>Error Handling</span>
+                            <span>Data Validation</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">6</div>
+                    <div class="timeline-content">
+                        <h3>Production Optimization</h3>
+                        <p>Achieved enterprise-grade performance with comprehensive testing, monitoring, and security auditing</p>
+                        <div class="timeline-tech">
+                            <span>Testing Suite</span>
+                            <span>Performance Tuning</span>
+                            <span>Security Audit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="challenges-overcome">
+                <h3>Key Challenges Overcome</h3>
+                <div class="challenges-grid">
+                    <div class="challenge-card">
+                        <div class="challenge-icon">
+                            <i class="fas fa-stream"></i>
+                        </div>
+                        <h4>Real-time Streaming Complexity</h4>
+                        <p>Implementing ChatGPT-like streaming with tool execution transparency required custom SSE architecture with event processing and graceful error handling.</p>
+                        <div class="solution-badge">Solved with Custom SSE + Event Architecture</div>
+                    </div>
+                    
+                    <div class="challenge-card">
+                        <div class="challenge-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h4>Enterprise Security</h4>
+                        <p>Securing sensitive API keys while maintaining user experience required comprehensive encryption and usage tracking implementation.</p>
+                        <div class="solution-badge">Solved with AES-256-GCM + RLS</div>
+                    </div>
+                    
+                    <div class="challenge-card">
+                        <div class="challenge-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>Mobile Optimization</h4>
+                        <p>Creating responsive chat interface that works seamlessly across devices while maintaining real-time performance was technically challenging.</p>
+                        <div class="solution-badge">Solved with Mobile-First Design + SSE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results & Impact -->
+    <section id="results" class="results-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Results & Impact</h2>
+                <p class="section-subtitle">Measurable outcomes and technical achievements</p>
+            </div>
+            
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-stream"></i>
+                    </div>
+                    <div class="result-number">SSE</div>
+                    <div class="result-label">Real-time Streaming</div>
+                    <div class="result-description">
+                        Custom Server-Sent Events implementation with transparent tool execution provides ChatGPT-like real-time experience with chunk-based content delivery.
+                    </div>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="result-number">3+</div>
+                    <div class="result-label">Marketplace Tools</div>
+                    <div class="result-description">
+                        Comprehensive LangGraph-powered tool system with dynamic execution for product management, analytics, and marketplace operations.
+                    </div>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="result-number">AES-256</div>
+                    <div class="result-label">Security Encryption</div>
+                    <div class="result-description">
+                        Enterprise-grade security with AES-256-GCM encryption, Row Level Security, and comprehensive audit logging for API key protection.
+                    </div>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="result-number">80%+</div>
+                    <div class="result-label">Test Coverage</div>
+                    <div class="result-description">
+                        Comprehensive Jest testing suite with unit, integration, and API tests ensuring production-ready code quality.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="learning-outcomes">
+                <h3>Key Learning Outcomes</h3>
+                <div class="learning-grid">
+                    <div class="learning-item">
+                        <h4><i class="fas fa-brain"></i> AI Architecture Mastery</h4>
+                        <p>Deep understanding of LangGraph state machines, tool orchestration, and AI agent workflows for complex business applications.</p>
+                    </div>
+                    <div class="learning-item">
+                        <h4><i class="fas fa-stream"></i> Real-time Systems</h4>
+                        <p>Advanced expertise in Server-Sent Events, streaming architectures, and real-time communication patterns for web applications.</p>
+                    </div>
+                    <div class="learning-item">
+                        <h4><i class="fas fa-shield-alt"></i> Enterprise Security</h4>
+                        <p>Comprehensive knowledge of encryption, authentication, usage tracking, and security best practices for SaaS platforms.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="future-improvements">
+                <h3>Future Roadmap</h3>
+                <div class="improvements-grid">
+                    <div class="improvement-card">
+                        <div class="improvement-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Multi-Agent System</h4>
+                        <p>Expand to specialized AI agents for product management, analytics, pricing strategy, and customer support with intelligent routing.</p>
+                    </div>
+                    <div class="improvement-card">
+                        <div class="improvement-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Advanced Analytics</h4>
+                        <p>Implement machine learning models for predictive analytics, market trend analysis, and automated business insights.</p>
+                    </div>
+                    <div class="improvement-card">
+                        <div class="improvement-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>Multi-Platform</h4>
+                        <p>Expand beyond Russian markets to include international e-commerce platforms like Amazon, eBay, and Shopify.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <i class="fas fa-robot"></i>
+                        <span>MP Bot</span>
+                    </div>
+                    <p>Enterprise AI Chatbot Platform for Russian E-commerce</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Project Links</h4>
+                        <a href="https://github.com/Timur-Cheryapov/mp-bot-frontend" target="_blank">
+                            <i class="fab fa-github"></i> Frontend Repository
+                        </a>
+                        <a href="https://github.com/Timur-Cheryapov/mp-bot-backend" target="_blank">
+                            <i class="fab fa-github"></i> Backend Repository
+                        </a>
+                        <a href="#demo">
+                            <i class="fas fa-play"></i> Live Demo
+                        </a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Connect</h4>
+                        <a href="https://t.me/timurchery" target="_blank">
+                            <i class="fab fa-telegram"></i> Telegram
+                        </a>
+                        <a href="mailto:timur.chery@yandex.ru">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                        <a href="https://timur-cheryapov.github.io/" target="_blank">
+                            <i class="fas fa-globe"></i> Portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-attribution">
+                    <p>Project developed with Cursor AI assistance • Showcase page created collaboratively</p>
+                    <p>Focused on genuine technical contributions, learning outcomes, and collaborative AI development</p>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 MP Bot Portfolio Showcase. Built with modern web technologies.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-image" src="" alt="">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Tech Info Tooltip -->
+    <div id="tech-tooltip" class="tech-tooltip"></div>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+</body>
+</html> 
