@@ -1130,6 +1130,10 @@ a:hover {
   font-weight: 500;
 }
 
+.integration-flow h3 {
+  text-align: center;
+}
+
 /* Stack Section */
 .stack-section {
   padding: var(--section-padding);
@@ -1201,6 +1205,24 @@ a:hover {
 
 .tech-item span {
   font-weight: 500;
+}
+
+.database-architecture {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.database-architecture h3 {
+  margin-bottom: 2rem;
+}
+
+.database-diagram-placeholder {
+  border-radius: var(--radius-lg);
+  border: 1px solid lightgray;
+}
+
+.database-diagram-placeholder img {
+  object-fit: contain;
 }
 
 .stack-highlights h3 {
